@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <style>
+        @font-face {
+            font-family: 'Digital-7 Regular';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Digital-7 Regular'), url('digital-7.woff') format('woff');
+        }
+        .calculater-body {
+            height: 500px;
+            width: 380px;
+            background-color: #cc66ff;
+            margin: 50px auto;
+            border-radius: 15px;
+            padding: 40PX 30px;
+            padding-top: 70px;
+            border: black solid 3px;
+        }
+         .calculater-body:hover{
+            background-color: lightgreen;
+            box-shadow: -5px 5px 7px 8px;
+            transition: 0.5s;
+        }
+        .screen {
+            background-color: #A1AF77;
+            text-align: right;
+            width: 330px;
+            display: block;
+            margin: 0px auto;
+            font-size: 35px;
+            padding: 5px 10px;
+            margin-bottom: 50PX;
+            font-family:'Digital-7 Regular';
+            border:black double 8px;
+        }
+        .buttons-container {
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            width: 60px;
+            text-align: center;
+            font-size: 30px;
+            padding: 5px auto;
+            margin: 10PX;
+            border-radius: 35px;
+            border: solid 3px black;
+            cursor: pointer;
+            background-color: lightyellow;
+        }
+        .btn-equal {
+            background-color:green;
+            text-align: center;
+            color: white;
+            width: 60PX;
+            height: 110PX;
+            font-size: 30PX;
+            margin: 10PX;
+            border-radius: 5px;
+            border: solid 3px black;
+            cursor: pointer;
+        }
+        .btn:hover {
+            box-shadow: 0px 0px 15px yellow;
+            transition: 0.4s;
+        }
+
+        .btn-equal:hover {
+            box-shadow: 0px 0px 10px yellow;
+            transition: 0.4s;
+        }
+
+    </style>
+</head>
+
+<body>
+        <div class="calculater-body">
+            <input type="text" value="0" class="screen" />
+            <div class="buttons-container">
+                <button class="btn">AC</button>
+                <button class="btn">7</button>
+                <button class="btn">4</button>
+                <button class="btn">1</button>
+                <button class="btn">0</button>
+                <button class="btn">M+</button>
+                <button class="btn">8</button>
+                <button class="btn">2</button>
+                <button class="btn">5</button>
+                <button class="btn">.</button>
+                <button class="btn">/</button>
+                <button class="btn">9</button>
+                <button class="btn">6</button>
+                <button class="btn">3</button>
+                <button class="btn">%</button>
+                <button class="btn">X</button>
+                <button class="btn">-</button>
+                <button class="btn">+</button>
+                <button class="btn-equal">=</button>
+        </div>
+    </div>
